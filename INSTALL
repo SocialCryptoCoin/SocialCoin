@@ -1,9 +1,9 @@
-Building Bitcoin
+Building Socialcoin
 
-See doc/readme-qt.rst for instructions on building Bitcoin-Qt,
+See doc/readme-qt.rst for instructions on building Socialcoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Bitcoin.
+implementation of Socialcoin.
 
-See doc/build-*.txt for instructions on building bitcoind,
+See doc/build-*.txt for instructions on building socialcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Bitcoin.
+implementation of Socialcoin.

@@ -27,7 +27,7 @@ LIBS= -dead_strip
 TESTDEFS = -DTEST_DATA_DIR=$(abspath test/data)
 
 ifdef STATIC
-# Build STATIC if you are redistributing the bitcoind binary
+# Build STATIC if you are redistributing the socialcoind binary
 TESTLIBS += \
  $(DEPSDIR)/lib/libboost_unit_test_framework-mt.a
 LIBS += \
@@ -121,10 +121,10 @@ ifneq (${USE_IPV6}, -)
 	DEFS += -DUSE_IPV6=$(USE_IPV6)
 endif
 
-all: bitcoind
+all: socialcoind
 
-test check: test_bitcoin FORCE
-	./test_bitcoin
+test check: test_socialcoin FORCE
+	./test_socialcoin
 
 #
 # LevelDB support
@@ -151,7 +151,7 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-bitcoind: $(OBJS:obj/%=obj/%)
+socialcoind: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -163,11 +163,11 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_bitcoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+test_socialcoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
 
 clean:
-	-rm -f bitcoind test_bitcoin
+	-rm -f socialcoind test_socialcoin
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P

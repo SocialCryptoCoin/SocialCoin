@@ -361,7 +361,7 @@ bool CTxOut::IsDust() const
     // to spend something, then we consider it dust.
     // A typical txout is 34 bytes big, and will
     // need a CTxIn of at least 148 bytes to spend,
-    // so dust is a txout less than 54 uBTC
+    // so dust is a txout less than 54 uSOC
     // (5460 satoshis) with default nMinRelayTxFee
     return ((nValue*1000)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);
 }
@@ -1592,7 +1592,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("bitcoin-scriptch");
+    RenameThread("socialcoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -4477,7 +4477,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("BitcoinMiner:\n");
+    printf("SocialcoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4486,7 +4486,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("BitcoinMiner : generated block is stale");
+            return error("SocialcoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4500,7 +4500,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("BitcoinMiner : ProcessBlock, block not accepted");
+            return error("SocialcoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
@@ -4508,9 +4508,9 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static BitcoinMiner(CWallet *pwallet)
 {
-    printf("BitcoinMiner started\n");
+    printf("SocialcoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("bitcoin-miner");
+    RenameThread("socialcoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4532,7 +4532,7 @@ void static BitcoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running BitcoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running SocialcoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4631,7 +4631,7 @@ void static BitcoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("BitcoinMiner terminated\n");
+        printf("SocialcoinMiner terminated\n");
         throw;
     }
 }

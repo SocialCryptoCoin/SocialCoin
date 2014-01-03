@@ -14,7 +14,7 @@ To Build
 	cd src/
 	make -f makefile.unix		# Headless bitcoin
 
-See readme-qt.rst for instructions on building Bitcoin-Qt, the graphical user interface.
+See readme-qt.rst for instructions on building Socialcoin-Qt, the graphical user interface.
 
 Dependencies
 ---------------------
@@ -82,21 +82,21 @@ Optional:
 Dependency Build Instructions: Gentoo
 -------------------------------------
 
-Note: If you just want to install bitcoind on Gentoo, you can add the Bitcoin overlay and use your package manager:
+Note: If you just want to install socialcoind on Gentoo, you can add the Bitcoin overlay and use your package manager:
 
-	layman -a bitcoin && emerge bitcoind
+	layman -a bitcoin && emerge socialcoind
 	emerge -av1 --noreplace boost glib openssl sys-libs/db:4.8
 
 Take the following steps to build (no UPnP support):
 
 	cd ${BITCOIN_DIR}/src
 	make -f makefile.unix USE_UPNP= USE_IPV6=1 BDB_INCLUDE_PATH='/usr/include/db4.8'
-	strip bitcoind
+	strip socialcoind
 
 
 Notes
 -----
-The release is built with GCC and then "strip bitcoind" to strip the debug
+The release is built with GCC and then "strip socialcoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 

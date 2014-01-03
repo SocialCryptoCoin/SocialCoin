@@ -1,4 +1,4 @@
-Bitcoin-Qt: Qt4 GUI for Bitcoin
+Socialcoin-Qt: Qt4 GUI for Bitcoin
 ===============================
 
 Build instructions

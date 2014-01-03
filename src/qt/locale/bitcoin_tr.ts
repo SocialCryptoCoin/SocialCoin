@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Bitcoin</source>
-        <translation>Bitcoin hakkında</translation>
+        <source>About Socialcoin</source>
+        <translation>Socialcoin hakkında</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Bitcoin&lt;/b&gt; sürüm</translation>
+        <source>&lt;b&gt;Socialcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Socialcoin&lt;/b&gt; sürüm</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Bitcoin developers</source>
-        <translation>Bitcoin geliştiricileri</translation>
+        <source>The Socialcoin developers</source>
+        <translation>Socialcoin geliştiricileri</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Bunlar, ödeme almak için Bitcoin adresleridir. Kimin ödeme yaptığını izleyebilmek için her ödeme yollaması gereken kişiye değişik bir adres verebilirsiniz.</translation>
+        <source>These are your Socialcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Bunlar, ödeme almak için Socialcoin adresleridir. Kimin ödeme yaptığını izleyebilmek için her ödeme yollaması gereken kişiye değişik bir adres verebilirsiniz.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Bitcoin address</source>
-        <translation>Bir Bitcoin adresinin sizin olduğunu ispatlamak için mesaj imzalayın</translation>
+        <source>Sign a message to prove you own a Socialcoin address</source>
+        <translation>Bir Socialcoin adresinin sizin olduğunu ispatlamak için mesaj imzalayın</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Bitcoin address</source>
-        <translation>Belirtilen Bitcoin adresi ile imzalandığını doğrulamak için bir mesajı kontrol et</translation>
+        <source>Verify a message to ensure it was signed with a specified Socialcoin address</source>
+        <translation>Belirtilen Socialcoin adresi ile imzalandığını doğrulamak için bir mesajı kontrol et</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödeme yapmak için kullanacağınız Bitcoin adreslerinizdir. Bitcoin yollamadan önce meblağı ve alıcı adresini daima kontrol ediniz.</translation>
+        <source>These are your Socialcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödeme yapmak için kullanacağınız Socialcoin adreslerinizdir. Socialcoin yollamadan önce meblağı ve alıcı adresini daima kontrol ediniz.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -275,8 +275,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Şifreleme işlemini tamamlamak için Bitcoin şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Bitcoinlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
+        <source>Socialcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your socialcoins from being stolen by malware infecting your computer.</source>
+        <translation>Şifreleme işlemini tamamlamak için Socialcoin şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Socialcoinlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -321,9 +321,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>SocialcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+233"/>
+        <location filename="../socialcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>&amp;Mesaj imzala...</translation>
     </message>
@@ -374,8 +374,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Bitcoin</source>
-        <translation>Bitcoin hakkında bilgi göster</translation>
+        <source>Show information about Socialcoin</source>
+        <translation>Socialcoin hakkında bilgi göster</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Bir Bitcoin adresine Bitcoin yolla</translation>
+        <source>Send coins to a Socialcoin address</source>
+        <translation>Bir Socialcoin adresine Socialcoin yolla</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Bitcoin seçeneklerinin yapılandırmasını değiştir</translation>
+        <source>Modify configuration options for Socialcoin</source>
+        <translation>Socialcoin seçeneklerinin yapılandırmasını değiştir</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Socialcoin</source>
+        <translation>Socialcoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Bitcoin</source>
-        <translation>Bitcoin &amp;Hakkında</translation>
+        <source>&amp;About Socialcoin</source>
+        <translation>Socialcoin &amp;Hakkında</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Bitcoin adresleri ile imzala</translation>
+        <source>Sign messages with your Socialcoin addresses to prove you own them</source>
+        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Socialcoin adresleri ile imzala</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Belirtilen Bitcoin adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
+        <source>Verify messages to ensure they were signed with specified Socialcoin addresses</source>
+        <translation>Belirtilen Socialcoin adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Bitcoin client</source>
-        <translation>Bitcoin istemcisi</translation>
+        <source>Socialcoin client</source>
+        <translation>Socialcoin istemcisi</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>Bitcoin şebekesine %n faal bağlantı</numerusform><numerusform>Bitcoin şebekesine %n faal bağlantı</numerusform></translation>
+        <source>%n active connection(s) to Socialcoin network</source>
+        <translation><numerusform>Socialcoin şebekesine %n faal bağlantı</numerusform><numerusform>Socialcoin şebekesine %n faal bağlantı</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Adres: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI okunamadı! Sebebi geçersiz bir Bitcoin adresi veya hatalı URI parametreleri olabilir.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Socialcoin address or malformed URI parameters.</source>
+        <translation>URI okunamadı! Sebebi geçersiz bir Socialcoin adresi veya hatalı URI parametreleri olabilir.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,9 +670,9 @@ Adres: %4
         <translation>Cüzdan &lt;b&gt;şifrelenmiştir&lt;/b&gt; ve şu anda &lt;b&gt;kilitlidir&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Ciddi bir hata oluştu. Bitcoin artık güvenli bir şekilde işlemeye devam edemez ve kapanacaktır.</translation>
+        <location filename="../socialcoin.cpp" line="+111"/>
+        <source>A fatal error occurred. Socialcoin can no longer continue safely and will quit.</source>
+        <translation>Ciddi bir hata oluştu. Socialcoin artık güvenli bir şekilde işlemeye devam edemez ve kapanacaktır.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adres: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
-        <translation>Girilen &quot;%1&quot; adresi geçerli bir Bitcoin adresi değildir.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Socialcoin address.</source>
+        <translation>Girilen &quot;%1&quot; adresi geçerli bir Socialcoin adresi değildir.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adres: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Bitcoin-Qt</source>
-        <translation>Bitcoin-Qt</translation>
+        <source>Socialcoin-Qt</source>
+        <translation>Socialcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Adres: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation>Sistemde oturum açıldığında Bitcoin&apos;i otomatik olarak başlat.</translation>
+        <source>Automatically start Socialcoin after logging in to the system.</source>
+        <translation>Sistemde oturum açıldığında Socialcoin&apos;i otomatik olarak başlat.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Bitcoin on system login</source>
-        <translation>Bitcoin&apos;i sistem oturumuyla &amp;başlat</translation>
+        <source>&amp;Start Socialcoin on system login</source>
+        <translation>Socialcoin&apos;i sistem oturumuyla &amp;başlat</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,8 +844,8 @@ Adres: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönlendiricide Bitcoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
+        <source>Automatically open the Socialcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönlendiricide Socialcoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,8 +854,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Bitcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Bitcoin şebekesine SOCKS vekil sunucusu vasıtasıyla bağlan (mesela Tor ile bağlanıldığında).</translation>
+        <source>Connect to the Socialcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Socialcoin şebekesine SOCKS vekil sunucusu vasıtasıyla bağlan (mesela Tor ile bağlanıldığında).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Adres: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Bitcoin tekrar başlatıldığında etkinleşecektir.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Socialcoin.</source>
+        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Socialcoin tekrar başlatıldığında etkinleşecektir.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -940,12 +940,12 @@ Adres: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Bitcoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+        <translation>Socialcoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation>Muamele listesinde Bitcoin adreslerinin gösterilip gösterilmeyeceklerini belirler.</translation>
+        <source>Whether to show Socialcoin addresses in the transaction list or not.</source>
+        <translation>Muamele listesinde Socialcoin adreslerinin gösterilip gösterilmeyeceklerini belirler.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Adres: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Bitcoin.</source>
-        <translation>Bu ayarlar Bitcoin tekrar başlatıldığında etkinleşecektir.</translation>
+        <source>This setting will take effect after restarting Socialcoin.</source>
+        <translation>Bu ayarlar Socialcoin tekrar başlatıldığında etkinleşecektir.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,7 +1015,7 @@ Adres: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Socialcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Görüntülenen veriler zaman aşımına uğramış olabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak şebeke ile eşleşir ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
@@ -1069,8 +1069,8 @@ Adres: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+        <source>Cannot start socialcoin: click-to-pay handler</source>
+        <translation>Socialcoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
 </context>
 <context>
@@ -1219,8 +1219,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</source>
-        <translation>Mevcut Bitcoin komut satırı seçeneklerinin listesini içeren Bitcoin-Qt yardımını göster.</translation>
+        <source>Show the Socialcoin-Qt help message to get a list with possible Socialcoin command-line options.</source>
+        <translation>Mevcut Socialcoin komut satırı seçeneklerinin listesini içeren Socialcoin-Qt yardımını göster.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,13 +1239,13 @@ Adres: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Bitcoin - Debug window</source>
-        <translation>Bitcoin - Hata ayıklama penceresi</translation>
+        <source>Socialcoin - Debug window</source>
+        <translation>Socialcoin - Hata ayıklama penceresi</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Çekirdeği</translation>
+        <source>Socialcoin Core</source>
+        <translation>Socialcoin Çekirdeği</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1254,8 +1254,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Güncel veri klasöründen Bitcoin hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
+        <source>Open the Socialcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Güncel veri klasöründen Socialcoin hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1264,8 +1264,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation>Bitcoin RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the Socialcoin RPC console.</source>
+        <translation>Socialcoin RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1290,7 +1290,7 @@ Adres: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Bitcoin yolla</translation>
+        <translation>Socialcoin yolla</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1319,8 +1319,8 @@ Adres: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>123.456 SOC</source>
+        <translation>123.456 SOC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1448,8 +1448,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Bitcoin adresi giriniz (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Socialcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Socialcoin adresi giriniz (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1513,8 +1513,8 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Bu Bitcoin adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
+        <source>Sign the message to prove you own this Socialcoin address</source>
+        <translation>Bu Socialcoin adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,8 +1549,8 @@ Adres: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Belirtilen Bitcoin adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
+        <source>Verify the message to ensure it was signed with the specified Socialcoin address</source>
+        <translation>Belirtilen Socialcoin adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Adres: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Bitcoin adresi giriniz (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Socialcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Socialcoin adresi giriniz (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Adres: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Bitcoin signature</source>
-        <translation>Bitcoin imzası gir</translation>
+        <source>Enter Socialcoin signature</source>
+        <translation>Socialcoin imzası gir</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,8 +1649,8 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Bitcoin developers</source>
-        <translation>Bitcoin geliştiricileri</translation>
+        <source>The Socialcoin developers</source>
+        <translation>Socialcoin geliştiricileri</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1784,7 +1784,7 @@ Adres: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Oluşturulan Bitcoin&apos;lerin harcanabilmelerinden önce 120 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu &quot;kabul edilmedi&quot; olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <translation>Oluşturulan Socialcoin&apos;lerin harcanabilmelerinden önce 120 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu &quot;kabul edilmedi&quot; olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2137,7 +2137,7 @@ Adres: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Bitcoin yolla</translation>
+        <translation>Socialcoin yolla</translation>
     </message>
 </context>
 <context>
@@ -2184,11 +2184,11 @@ Adres: %4
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>socialcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Bitcoin version</source>
-        <translation>Bitcoin sürümü</translation>
+        <location filename="../socialcoinstrings.cpp" line="+94"/>
+        <source>Socialcoin version</source>
+        <translation>Socialcoin sürümü</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2197,8 +2197,8 @@ Adres: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or bitcoind</source>
-        <translation>-server ya da bitcoind&apos;ye komut gönder</translation>
+        <source>Send command to -server or socialcoind</source>
+        <translation>-server ya da socialcoind&apos;ye komut gönder</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,13 +2217,13 @@ Adres: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>Yapılandırma dosyası belirt (varsayılan: bitcoin.conf)</translation>
+        <source>Specify configuration file (default: socialcoin.conf)</source>
+        <translation>Yapılandırma dosyası belirt (varsayılan: socialcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Pid dosyası belirt (varsayılan: bitcoind.pid)</translation>
+        <source>Specify pid file (default: socialcoind.pid)</source>
+        <translation>Pid dosyası belirt (varsayılan: socialcoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,24 +2300,24 @@ Adres: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bitcoinrpc
+rpcuser=socialcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Socialcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, şu yapılandırma dosyasında rpc parolası belirtmeniz gerekir:
 %s
 Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye edilir:
-rpcuser=bitcoinrpc
+rpcuser=socialcoinrpc
 rpcpassword=%s
 (bu parolayı hatırlamanız gerekli değildir)
 Kullanıcı ismi ile parolanın FARKLI olmaları gerekir.
 Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.
 Sorunlar hakkında bildiri almak için alertnotify unsurunu ayarlamanız tavsiye edilir;
-mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
+mesela: alertnotify=echo %%s | mail -s &quot;Socialcoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2332,8 +2332,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Bitcoin is probably already running.</source>
-        <translation>%s veri dizininde kilit elde edilemedi. Bitcoin muhtemelen hâlihazırda çalışmaktadır.</translation>
+        <source>Cannot obtain a lock on data directory %s. Socialcoin is probably already running.</source>
+        <translation>%s veri dizininde kilit elde edilemedi. Socialcoin muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2363,7 +2363,7 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     <message>
         <location line="+6"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - bitcoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - socialcoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2377,8 +2377,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olup olmadığını kontrol ediniz! Saatiniz doğru değilse Bitcoin gerektiği gibi çalışamaz.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Socialcoin will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olup olmadığını kontrol ediniz! Saatiniz doğru değilse Socialcoin gerektiği gibi çalışamaz.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2518,7 +2518,7 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation>Bitcoin oluştur (varsayılan: 0)</translation>
+        <translation>Socialcoin oluştur (varsayılan: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2627,8 +2627,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation> SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</translation>
+        <source>SSL options: (see the Socialcoin Wiki for SSL setup instructions)</source>
+        <translation> SSL seçenekleri: (SSL kurulum bilgisi için Socialcoin vikisine bakınız)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2817,13 +2817,13 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Bitcoin sürümüne ihtiyacı var</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Socialcoin</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Socialcoin sürümüne ihtiyacı var</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation>Cüzdanın tekrar yazılması gerekiyordu: işlemi tamamlamak için Bitcoin&apos;i yeniden başlatınız</translation>
+        <source>Wallet needed to be rewritten: restart Socialcoin to complete</source>
+        <translation>Cüzdanın tekrar yazılması gerekiyordu: işlemi tamamlamak için Socialcoin&apos;i yeniden başlatınız</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2882,8 +2882,8 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Bitcoin is probably already running.</source>
-        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Bitcoin muhtemelen hâlihazırda çalışmaktadır.</translation>
+        <source>Unable to bind to %s on this computer. Socialcoin is probably already running.</source>
+        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Socialcoin muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
         <location line="+64"/>
