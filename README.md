@@ -12,3 +12,5 @@ Other Specifications: - 60 seconds block target - Difference retargets each bloc
 
 Charities and research facilities will be chosen by the community on a monthly basis, receiving a chunk of the charity fund.
 The charity fund starts with 5% of the total coins value and is open for extra donations from anyone in the community.
+
+Ports: 8945 for wallet and mining, 8946 for RPC
