@@ -14,3 +14,7 @@ Charities and research facilities will be chosen by the community on a monthly b
 The charity fund starts with 5% of the total coins value and is open for extra donations from anyone in the community.
 
 Ports: 8945 for wallet and mining, 8946 for RPC
+
+License
+
+Bitcoin Core is released under the terms of the MIT license. See COPYING for more information or see http://opensource.org/licenses/MIT.
