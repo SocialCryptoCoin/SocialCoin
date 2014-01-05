@@ -8,7 +8,7 @@
 #include "bitcoingui.h"
 #include "walletstack.h"
 
-#include <QVBoxLayout>
+#include <QHBoxLayout>
 #include <QMessageBox>
 
 #include <stdio.h>

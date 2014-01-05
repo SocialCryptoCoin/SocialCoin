@@ -15,21 +15,27 @@
 # 'make clean' assumes it is running inside a MSYS shell, and uses 'rm'
 # to remove files.
 
+LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static
+
 CXX ?= g++
 
 USE_UPNP:=-
 USE_IPV6:=1
 
 DEPSDIR?=/usr/local
-BOOST_SUFFIX?=-mgw46-mt-sd-1_52
+BOOST_SUFFIX?=-mgw48-mt-s-1_55
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
- -I"$(DEPSDIR)/include"
+ -I"c:/tools/boost_1_55_0" \
+ -I"c:/tools/db-4.8.30.NC/build_unix" \
+ -I"c:/tools/openssl-1.0.1e/include"
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
- -L"$(DEPSDIR)/lib"
+ -L"c:/tools/boost_1_55_0/stage/lib" \
+ -L"c:/tools/db-4.8.30.NC/build_unix" \
+ -L"c:/tools/openssl-1.0.1e"
 
 LIBS= \
  -l leveldb \
