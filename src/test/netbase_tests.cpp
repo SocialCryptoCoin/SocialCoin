@@ -57,15 +57,15 @@ BOOST_AUTO_TEST_CASE(netbase_splithost)
     BOOST_CHECK(TestSplitHost("www.coingen.io:80", "www.coingen.io", 80));
     BOOST_CHECK(TestSplitHost("[www.coingen.io]:80", "www.coingen.io", 80));
     BOOST_CHECK(TestSplitHost("127.0.0.1", "127.0.0.1", -1));
-    BOOST_CHECK(TestSplitHost("127.0.0.1:8945", "127.0.0.1", 8945));
+    BOOST_CHECK(TestSplitHost("127.0.0.1:8915", "127.0.0.1", 8915));
     BOOST_CHECK(TestSplitHost("[127.0.0.1]", "127.0.0.1", -1));
-    BOOST_CHECK(TestSplitHost("[127.0.0.1]:8945", "127.0.0.1", 8945));
+    BOOST_CHECK(TestSplitHost("[127.0.0.1]:8915", "127.0.0.1", 8915));
     BOOST_CHECK(TestSplitHost("::ffff:127.0.0.1", "::ffff:127.0.0.1", -1));
-    BOOST_CHECK(TestSplitHost("[::ffff:127.0.0.1]:8945", "::ffff:127.0.0.1", 8945));
-    BOOST_CHECK(TestSplitHost("[::]:8945", "::", 8945));
-    BOOST_CHECK(TestSplitHost("::8945", "::8945", -1));
-    BOOST_CHECK(TestSplitHost(":8945", "", 8945));
-    BOOST_CHECK(TestSplitHost("[]:8945", "", 8945));
+    BOOST_CHECK(TestSplitHost("[::ffff:127.0.0.1]:8915", "::ffff:127.0.0.1", 8915));
+    BOOST_CHECK(TestSplitHost("[::]:8915", "::", 8915));
+    BOOST_CHECK(TestSplitHost("::8915", "::8915", -1));
+    BOOST_CHECK(TestSplitHost(":8915", "", 8915));
+    BOOST_CHECK(TestSplitHost("[]:8915", "", 8915));
     BOOST_CHECK(TestSplitHost("", "", -1));
 }
 
@@ -80,10 +80,10 @@ bool static TestParse(string src, string canon)
 BOOST_AUTO_TEST_CASE(netbase_lookupnumeric)
 {
     BOOST_CHECK(TestParse("127.0.0.1", "127.0.0.1:65535"));
-    BOOST_CHECK(TestParse("127.0.0.1:8945", "127.0.0.1:8945"));
+    BOOST_CHECK(TestParse("127.0.0.1:8915", "127.0.0.1:8915"));
     BOOST_CHECK(TestParse("::ffff:127.0.0.1", "127.0.0.1:65535"));
     BOOST_CHECK(TestParse("::", "[::]:65535"));
-    BOOST_CHECK(TestParse("[::]:8945", "[::]:8945"));
+    BOOST_CHECK(TestParse("[::]:8915", "[::]:8915"));
     BOOST_CHECK(TestParse("[127.0.0.1]", "127.0.0.1:65535"));
     BOOST_CHECK(TestParse(":::", ""));
 }
