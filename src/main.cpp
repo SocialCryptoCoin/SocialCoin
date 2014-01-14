@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2");
+uint256 hashGenesisBlock("0xdee5f0c0b5faaff0eaa45519e9a0b3cd5fd2eea457eecbf68b47457af830fbad");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2762,12 +2762,13 @@ bool InitBlockIndex() {
         //   vMerkleTree: 4a5e1e
 
         // Genesis block
-        const char* pszTimestamp = "NY Times 05/Oct/2011 Steve Jobs, Appleâ€™s Visionary, Dies at 56";
+        const char* pszTimestamp = " December 19, 2013 — Arrest, strip-search of Indian diplomat in New York triggers uproar.";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
+        		
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
+        txNew.vout[0].nValue = 0 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
@@ -2776,22 +2777,54 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1317972665;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2084524493;
+        block.nNonce   = 2085064114;
 
-        if (fTestNet)
+		if (fTestNet)
         {
-            block.nTime    = 1296688602;
-            block.nNonce   = 414098458;
+            block.nTime    = 1386000000;
+            block.nNonce   = 0;
         }
 
         //// debug print
-        uint256 hash = block.GetHash();
-        printf("%s\n", hash.ToString().c_str());
-        printf("%s\n", hashGenesisBlock.ToString().c_str());
-        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        printf("block.GetHash() = %s\n", block.GetHash().ToString().c_str());
+        printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
+        assert(block.hashMerkleRoot == uint256("0x18989c2fd6f480f00544b063295772cf14ea1b7421bccd805d29dcd989eb4ec1"));
+
+        // If genesis block hash does not match, then generate new genesis hash.
+        if (false && block.GetHash() != hashGenesisBlock)
+        {
+            printf("Searching for genesis block...\n");
+            // This will figure out a valid hash and Nonce if you're
+            // creating a different genesis block:
+            uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+            uint256 thash;
+            char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+
+            while(true)
+            {
+                scrypt_1024_1_1_256_sp(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+                if (thash <= hashTarget)
+                    break;
+                if ((block.nNonce & 0xFFF) == 0)
+                {
+                    printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+                }
+                ++block.nNonce;
+                if (block.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time\n");
+                    ++block.nTime;
+                }
+            }
+			printf("*** GENESIS BLOCK CREATION COMPLETE ***");
+       	  	printf("block.nTime = %u \n", block.nTime);
+	        	printf("block.nNonce = %u \n", block.nNonce);
+			printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
+		       printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
+        }
+
         block.print();
-        assert(hash == hashGenesisBlock);
+        assert(block.GetHash() == hashGenesisBlock);
 
         // Start new block file
         try {
