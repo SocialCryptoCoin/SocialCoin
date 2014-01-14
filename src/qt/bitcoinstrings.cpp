@@ -142,7 +142,7 @@ QT_TRANSLATE_NOOP("socialcoin-core", "Invalid amount for -mintxfee=<amount>: '%s
 QT_TRANSLATE_NOOP("socialcoin-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
 QT_TRANSLATE_NOOP("socialcoin-core", "Invalid amount"),
 QT_TRANSLATE_NOOP("socialcoin-core", "List commands"),
-QT_TRANSLATE_NOOP("socialcoin-core", "Listen for connections on <port> (default: 8945 or testnet: 18945)"),
+QT_TRANSLATE_NOOP("socialcoin-core", "Listen for connections on <port> (default: 8915 or testnet: 8941)"),
 QT_TRANSLATE_NOOP("socialcoin-core", "Loading addresses..."),
 QT_TRANSLATE_NOOP("socialcoin-core", "Loading block index..."),
 QT_TRANSLATE_NOOP("socialcoin-core", "Loading wallet..."),
