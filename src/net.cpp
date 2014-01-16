@@ -1191,15 +1191,32 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-//    {"bluematt.me", "coingen-seed-scrypt.bluematt.me"},
     {"SocCoin.com", "soccoin.com"},
+	{"209.126.71.166", "209.126.71.166"},
+	{"65.30.27.82:8915", "65.30.27.82:8915"},
+	{"198.24.176.81", "198.24.176.81"},
+	{"176.9.194.113:8915", "176.9.194.113:8915"},
+	{"151.225.208.231:8915", "151.225.208.231:8915"},
+	{"192.241.215.76:8915", "192.241.215.76:8915"},
+	{"88.182.12.78:8915", "88.182.12.78:8915"},
+	{"212.83.187.132:8915", "212.83.187.132:8915"},
+	{"209.126.71.166:23919", "209.126.71.166:23919"},
+	{"bluematt.me", "coingen-seed-scrypt.bluematt.me"},
     {NULL, NULL}
 };
 
 static const char *strTestNetDNSSeed[][2] = {
-//    {"bitcoin.petertodd.org", "testnet-seed.socialcoin.petertodd.org"},
-//    {"bluematt.me", "testnet-seed.bluematt.me"},
-	{"SocCoin.com", "dnsseed.soccoin.com"},
+    {"SocCoin.com", "soccoin.com"},
+	{"209.126.71.166", "209.126.71.166"},
+	{"65.30.27.82:8915", "65.30.27.82:8915"},
+	{"198.24.176.81", "198.24.176.81"},
+	{"176.9.194.113:8915", "176.9.194.113:8915"},
+	{"151.225.208.231:8915", "151.225.208.231:8915"},
+	{"192.241.215.76:8915", "192.241.215.76:8915"},
+	{"88.182.12.78:8915", "88.182.12.78:8915"},
+	{"212.83.187.132:8915", "212.83.187.132:8915"},
+	{"209.126.71.166:23919", "209.126.71.166:23919"},
+	{"bluematt.me", "coingen-seed-scrypt.bluematt.me"},
     {NULL, NULL}
 };
 
