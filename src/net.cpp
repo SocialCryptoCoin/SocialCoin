@@ -1192,6 +1192,8 @@ void MapPort(bool)
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
     {"SocCoin.com", "soccoin.com"},
+    {"eu.hotpoolz.com:8915", "eu.hotpoolz.com:8915"},
+    {"us.hotpoolz.com:8915", "us.hotpoolz.com:8915"},
 	{"209.126.71.166", "209.126.71.166"},
 	{"65.30.27.82:8915", "65.30.27.82:8915"},
 	{"198.24.176.81", "198.24.176.81"},
@@ -1207,6 +1209,8 @@ static const char *strMainNetDNSSeed[][2] = {
 
 static const char *strTestNetDNSSeed[][2] = {
     {"SocCoin.com", "soccoin.com"},
+    {"eu.hotpoolz.com:8915", "eu.hotpoolz.com:8915"},
+    {"us.hotpoolz.com:8915", "us.hotpoolz.com:8915"},
 	{"209.126.71.166", "209.126.71.166"},
 	{"65.30.27.82:8915", "65.30.27.82:8915"},
 	{"198.24.176.81", "198.24.176.81"},
