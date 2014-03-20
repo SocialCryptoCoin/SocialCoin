@@ -13,7 +13,7 @@ Other Specifications: - 120 seconds block target - Difference retargets every ~2
 Charities and research facilities will be chosen by the community on a monthly basis, receiving a chunk of the charity fund.
 The charity fund starts with 5% of the total coins value and is open for extra donations from anyone in the community.
 
-Ports: 8945 for wallet and mining, 8946 for RPC
+Ports: 8915 for wallet and mining, 8946 for RPC
 
 SocialCoin is derived from the Bitcoin project and released under the terms of the MIT license. See COPYING for more information or see http://opensource.org/licenses/MIT.
 
